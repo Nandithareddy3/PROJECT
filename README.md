@@ -18,9 +18,3 @@ NewsSnap is a web application that allows users to access the latest news articl
 - CSS
 - JavaScript
 - News API
-
-## Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/newssnap.git
