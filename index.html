@@ -2,21 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>NewsSnap</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="app-container" role="main" aria-label="RSS News Feed Reader Application">
-    <header>
-      Latest News
-    </header>
-    <ul id="news-list" aria-live="polite" aria-label="News articles list">
-      <li style="color:#ddd; text-align:center; padding: 20px;">Loading news...</li>
+  <div class="app-container">
+    <header>NewsSnap</header>
+
+    <div class="controls">
+      <select id="category-select">
+        <option value="general">General</option>
+        <option value="technology">Technology</option>
+        <option value="sports">Sports</option>
+        <option value="business">Business</option>
+        <option value="entertainment">Entertainment</option>
+      </select>
+      <input type="text" id="search-bar" placeholder="Search news...">
+      <button id="refresh-button">Refresh</button>
+    </div>
+
+    <ul id="news-list">
+      <li style="text-align:center; padding: 20px; color: #ddd;">Loading news...</li>
     </ul>
-    <footer>
-      &copy; 2024 NewsSnap
-    </footer>
+
+    <footer>&copy; 2024 NewsSnap</footer>
   </div>
 
   <script src="script.js"></script>
