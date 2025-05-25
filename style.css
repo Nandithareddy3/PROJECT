@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
 }
-
 body {
   font-family: 'Open Sans', sans-serif;
   min-height: 100vh;
@@ -12,12 +11,11 @@ body {
   align-items: flex-start;
   padding: 20px;
   color: #fff;
-  background-image: url('background.jpg'); /* Path to your background image */
-  background-size: cover; /* Cover the entire viewport */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-image: url('background.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
 }
-
 body::before {
   content: '';
   position: fixed;
@@ -25,11 +23,9 @@ body::before {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
-  z-index: -1; /* Place it behind other content */
+  background: rgba(0, 0, 0, 0.5); 
+  z-index: -1; 
 }
-
-
 .app-container {
   background: rgba(255, 255, 255, 0.08);
   border-radius: 20px;
@@ -41,7 +37,6 @@ body::before {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(12px);
 }
-
 header {
   text-align: center;
   padding: 24px 20px 10px;
@@ -50,7 +45,6 @@ header {
   letter-spacing: 1.5px;
   border-bottom: 2px solid rgba(255, 255, 255, 0.15);
 }
-
 .controls {
   display: flex;
   justify-content: space-between;
@@ -60,7 +54,6 @@ header {
   background-color: rgba(255, 255, 255, 0.05);
   border-bottom: 2px solid rgba(255, 255, 255, 0.15);
 }
-
 select, input[type="text"], button {
   padding: 10px 12px;
   border-radius: 8px;
@@ -68,18 +61,15 @@ select, input[type="text"], button {
   outline: none;
   font-size: 0.95rem;
 }
-
 select, input[type="text"] {
   flex: 1;
   background-color: rgba(255, 255, 255, 0.1);
   color: #fff;
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
-
 select:focus, input[type="text"]:focus {
   border-color: #00ffff;
 }
-
 button {
   background-color: #00ffff;
   color: #000;
@@ -87,11 +77,9 @@ button {
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
-
 button:hover {
   background-color: #00cccc;
 }
-
 #news-list {
   flex-grow: 1;
   overflow-y: auto;
@@ -100,16 +88,13 @@ button:hover {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 16px;
 }
-
 #news-list::-webkit-scrollbar {
   width: 6px;
 }
-
 #news-list::-webkit-scrollbar-thumb {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 3px;
 }
-
 .news-item {
   background: rgba(255, 255, 255, 0.12);
   border-radius: 15px;
@@ -120,26 +105,22 @@ button:hover {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   transition: transform 0.2s ease, background 0.2s ease;
 }
-
 .news-item:hover {
   transform: translateY(-6px);
   background: rgba(255, 255, 255, 0.2);
 }
-
 .news-title {
   font-size: 1.1rem;
   font-weight: 700;
   margin-bottom: 10px;
   color: #fff;
 }
-
 .news-snippet {
   font-size: 0.9rem;
   color: #ddd;
   flex-grow: 1;
   margin-bottom: 14px;
 }
-
 .read-more {
   align-self: flex-start;
   padding: 6px 14px;
@@ -151,12 +132,10 @@ button:hover {
   text-decoration: none;
   transition: all 0.2s ease;
 }
-
 .read-more:hover {
   background-color: #00ffff;
   color: #111;
 }
-
 footer {
   text-align: center;
   padding: 12px;
@@ -168,12 +147,11 @@ select {
   padding: 10px 12px;
   border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  background-color: rgba(255, 255, 255, 0.1); /* Ensure visibility */
-  color: #fff; /* Text color */
+  background-color: rgba(255, 255, 255, 0.1); 
+  color: #fff; 
 }
-
 select option {
-  background-color: #0f2027; /* Background for dropdown options */
-  color: #fff; /* Text color for options */
+  background-color: #0f2027; 
+  color: #fff;
 }
 
